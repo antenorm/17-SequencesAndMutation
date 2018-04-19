@@ -132,7 +132,7 @@ def MUTATE_delete_negatives(numbers):
     k = 0
     while k < len(numbers):
         if numbers[k] < 0:
-            numbers.pop(k)
+            del numbers[k]
         else:
             k += 1
     # Done: 3. First, READ THE ABOVE TEST CODE.
